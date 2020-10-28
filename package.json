@@ -1,6 +1,8 @@
 {
-  "name": "vite-typescript",
+  "name": "vite-vue3-template",
   "version": "0.0.0",
+  "author": "TomokiMiyauci",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
