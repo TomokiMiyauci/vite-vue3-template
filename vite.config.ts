@@ -1,10 +1,12 @@
-import { join } from 'path'
-import type { UserConfig } from 'vite'
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import { resolve } from 'path'
 
-const config: UserConfig = {
-  alias: {
-    '/@/': join(__dirname, 'src'),
+export default defineConfig({
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
   },
-}
-
-export default config
+  plugins: [vue()],
+})

@@ -6,33 +6,34 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint:markup": "vti diagnostics",
+    "lint:markup": "vue-tsc --noEmit",
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "lint:style": "stylelint src/**/*.{css,scss,vue}"
   },
   "dependencies": {
-    "vue": "^3.0.2"
+    "vue": "^3.1.4"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.6.0",
-    "@typescript-eslint/parser": "^4.6.0",
-    "@vue/compiler-sfc": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "@vitejs/plugin-vue": "^1.2.4",
+    "@vue/compiler-sfc": "^3.1.4",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
-    "commitizen": "^4.2.2",
+    "commitizen": "^4.2.4",
     "cz-emoji": "^1.3.1",
-    "eslint": "^7.12.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-vue": "^7.1.0",
+    "eslint": "^7.30.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.13.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.5.0",
-    "prettier": "^2.1.2",
-    "stylelint": "^13.7.2",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-standard": "^20.0.0",
-    "typescript": "^4.0.5",
-    "vite": "^1.0.0-rc.8",
-    "vti": "^0.0.13"
+    "prettier": "^2.3.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "typescript": "^4.3.5",
+    "vite": "^2.4.1",
+    "vue-tsc": "^0.2.0"
   },
   "husky": {
     "hooks": {
